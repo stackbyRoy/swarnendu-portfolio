@@ -14,7 +14,7 @@
 
 ## Preview
 
-
+>
 <p align="center">
   <img src="./assets/images/preview.png" alt="Portfolio Preview" width="90%">
 </p>
