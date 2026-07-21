@@ -4,7 +4,7 @@
 
 *A premium, product-focused developer portfolio built with **HTML**, **CSS**, and **JavaScript**.*
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-3B82F6?style=for-the-badge)](https://your-vercel-link.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-3B82F6?style=for-the-badge)](https://swarnendu-roy-portfolio.vercel.app)
 [![Documentation](https://img.shields.io/badge/Documentation-Available-18181B?style=for-the-badge)](./docs)
 [![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](LICENSE)
 
