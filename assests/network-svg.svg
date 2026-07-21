@@ -1,0 +1,109 @@
+<svg 
+  class="network-svg"
+  viewBox="0 0 520 520"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+
+<defs>
+
+    <!-- Soft cobalt glow -->
+    <filter id="blueGlow">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+
+</defs>
+
+
+<!-- SYSTEM PATHS -->
+
+<g class="paths">
+
+    <path 
+    class="system-path"
+    d="M90 250 H210 C240 250 250 220 280 220 H420"
+    />
+
+    <path 
+    class="system-path"
+    d="M180 120 V250"
+    />
+
+    <path 
+    class="system-path"
+    d="M280 220 V370"
+    />
+
+    <path 
+    class="system-path"
+    d="M280 220 C340 220 350 140 430 140"
+    />
+
+    <path 
+    class="system-path"
+    d="M280 370 H390 C430 370 440 330 440 290"
+    />
+
+    <path 
+    class="system-path"
+    d="M120 360 C160 360 170 300 210 300"
+    />
+
+</g>
+
+
+
+<!-- NODE SYSTEM -->
+
+<g class="nodes">
+
+
+<!-- small nodes -->
+
+<circle class="node" cx="90" cy="250" r="6"/>
+<circle class="node" cx="180" cy="120" r="6"/>
+<circle class="node" cx="210" cy="250" r="7"/>
+<circle class="node" cx="420" cy="220" r="6"/>
+<circle class="node" cx="430" cy="140" r="6"/>
+<circle class="node" cx="390" cy="370" r="6"/>
+<circle class="node" cx="120" cy="360" r="6"/>
+
+
+
+<!-- main cobalt node -->
+
+<circle 
+class="core-ring"
+cx="280"
+cy="220"
+r="30"
+/>
+
+<circle
+class="core-node"
+cx="280"
+cy="220"
+r="10"
+/>
+
+
+</g>
+
+
+
+<!-- subtle connection points -->
+
+<g class="dots">
+
+<circle cx="280" cy="370" r="3"/>
+<circle cx="440" cy="290" r="3"/>
+<circle cx="210" cy="300" r="3"/>
+
+</g>
+
+
+</svg>

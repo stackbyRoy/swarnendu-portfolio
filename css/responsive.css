@@ -1,0 +1,121 @@
+/* ==========================================================================
+   RESPONSIVE LAYOUT STYLES (css/responsive.css)
+   ========================================================================== */
+
+/* Breakpoint Guide:
+   Mobile:  0 - 767px
+   Tablet:  768px - 1023px
+   Laptop:  1024px - 1439px
+   Desktop: 1440px+
+========================================================================== */
+
+/* 1. Large Displays (Desktop / Ultrawide) */
+@media (min-width: 1440px) {
+  :root {
+    --font-size-display: 4rem;      /* Larger hero display heading */
+  }
+
+  .container {
+    max-width: var(--container-max-width-lg);
+  }
+}
+
+/* 2. Laptops & Smaller Desktops */
+@media (max-width: 1439px) {
+  :root {
+    --font-size-display: 3.25rem;
+  }
+}
+
+/* 3. Tablets (Portraits/Landscape) */
+@media (max-width: 1023px) {
+  :root {
+    --font-size-display: 2.75rem;
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.35rem;
+    --font-size-h3: 1.15rem;
+    --font-size-body: 0.95rem;
+  }
+
+  section {
+    padding-top: var(--space-80);
+    padding-bottom: var(--space-80);
+  }
+
+  .container {
+    padding-left: var(--space-24);
+    padding-right: var(--space-24);
+  }
+}
+
+/* 4. Mobiles (Landscape and Portrait) */
+@media (max-width: 767px) {
+  :root {
+    --font-size-display: 2.25rem;  /* Responsive scaling hero header */
+    --font-size-h1: 1.75rem;
+    --font-size-h2: 1.25rem;
+    --font-size-h3: 1.1rem;
+    --font-size-body: 0.9rem;
+    --font-size-sm: 0.8rem;
+  }
+
+  section {
+    padding-top: var(--space-64);
+    padding-bottom: var(--space-64);
+  }
+
+  .container {
+    padding-left: var(--space-16);
+    padding-right: var(--space-16);
+  }
+
+  /* Padding adjustments to allow thumb reach comfort */
+  .card {
+     padding: var(--space-24);
+  }
+  
+  .section-header {
+     margin-bottom: var(--space-32);
+  }
+
+  /* Avoid long button text sizing wraps on small devices */
+  .btn {
+    padding: 10px 20px;
+    font-size: var(--font-size-sm);
+  }
+}
+
+/* 5. Extra Small Mobiles */
+@media (max-width: 375px) {
+  :root {
+    --font-size-display: 2rem;
+  }
+
+  .btn {
+    width: 100%; /* Force stacked buttons for extra small tap spaces */
+  }
+}
+
+/* 6. Print Styles (Clean Resume Print layout fallback) */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  nav, footer, .btn, .theme-toggle, .bg-grain {
+    display: none !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+}

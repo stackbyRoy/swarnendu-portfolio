@@ -1,0 +1,126 @@
+/* ==========================================================================
+   DESIGN TOKENS & THEMING (css/variables.css)
+   ========================================================================== */
+
+/* Spacing and constants */
+:root {
+  /* Layout Grid & Container Dimensions */
+  --container-max-width: 1200px;
+  --container-max-width-lg: 1280px;
+  --reading-max-width: 720px;
+
+  /* 8-Point Spacing Scale */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-128: 128px;
+  --space-160: 160px;
+
+  /* Border Radiuses */
+  --radius-xs: 4px;
+  --radius-sm: 8px; /* Inputs, badges, small cards */
+  --radius-btn: 12px; /* Buttons */
+  --radius-card: 16px; /* Cards and containers */
+  --radius-circle: 50%; /* Circled items */
+
+  /* Typography Scale */
+  --font-family:
+    "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  --font-family-mono: "Geist Mono", "Fira Code", monospace;
+
+  --font-size-display: 3.5rem; /* 56px - Hero Only */
+  --font-size-h1: 2.25rem; /* 36px - Section Headers */
+  --font-size-h2: 1.5rem; /* 24px - Card & Timelines */
+  --font-size-h3: 1.25rem; /* 20px - Subheadings */
+  --font-size-body: 1rem; /* 16px - Base text */
+  --font-size-sm: 0.875rem; /* 14px - Muted captions */
+  --font-size-xs: 0.75rem; /* 12px - Badges */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-display: 1.1;
+  --line-height-heading: 1.25;
+  --line-height-body: 1.6;
+
+  /* Animation Timings */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   THEME STYLING
+   ========================================================================== */
+
+/* DARK THEME (Default - Designed first) */
+:root,
+:root[data-theme="dark"] {
+  /* Colors */
+  --bg-primary: #0a0a0c; /* Luxurious charcoal dark background */
+  --bg-secondary: #131317; /* Slightly elevated surface card */
+  --bg-tertiary: #1a1a21; /* Highly elevated buttons/menus */
+
+  --text-primary: #f5f5f7; /* Near white */
+  --text-secondary: #86868b; /* Muted gray */
+  --text-tertiary: #515155; /* Secondary muted */
+
+  --border: #222226; /* Thin border */
+  --border-hover: #313136; /* Dark hovered border */
+
+  /* Accent Color (Cobalt Blue) */
+  --accent: #2f80ed;
+  --accent-hover: #4d94ff;
+  --accent-muted: rgba(47, 128, 237, 0.15);
+
+  /* Utilities & Overlays */
+  --shadow: rgba(0, 0, 0, 0.4);
+  --nav-bg: rgba(10, 10, 12, 0.7);
+  --focus-ring: 0 0 0 3px rgba(47, 128, 237, 0.4);
+
+  /* Scrollbar */
+  --scrollbar-track: #0a0a0c;
+  --scrollbar-thumb: #222226;
+  --scrollbar-thumb-hover: #313136;
+}
+
+/* LIGHT THEME (Secondary overlay) */
+:root[data-theme="light"] {
+  /* Colors */
+  --bg-primary: #fafafa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f2f2f7;
+
+  --text-primary: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #86868b;
+
+  --border: #edebeb;
+  --border-hover: #d2d2d7;
+
+  /* Accent Color (Cobalt Blue Premium) */
+  --accent: #0066cc;
+  --accent-hover: #0051a8;
+  --accent-muted: rgba(0, 102, 204, 0.08);
+
+  /* Utilities & Overlays */
+  --shadow: rgba(0, 0, 0, 0.05);
+  --nav-bg: rgba(250, 250, 250, 0.7);
+  --focus-ring: 0 0 0 3px rgba(0, 102, 204, 0.3);
+
+  /* Scrollbar */
+  --scrollbar-track: #fafafa;
+  --scrollbar-thumb: #e2e2e7;
+  --scrollbar-thumb-hover: #c7c7cc;
+}

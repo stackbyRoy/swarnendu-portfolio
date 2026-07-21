@@ -1,0 +1,204 @@
+.network-svg {
+
+    width: 100%;
+    max-width: 520px;
+
+    overflow: visible;
+
+}
+
+
+/* =====================
+   BASE PATH STYLE
+===================== */
+
+.system-path {
+
+    stroke: rgba(148,163,184,0.35);
+
+    stroke-width:1.5;
+
+    stroke-linecap:round;
+
+    fill:none;
+
+    stroke-dasharray:700;
+
+    stroke-dashoffset:700;
+
+    transition:
+    stroke 700ms ease,
+    filter 700ms ease;
+
+}
+
+
+
+/* =====================
+   NODES
+===================== */
+
+
+.node {
+
+    fill:#0b0b0f;
+
+    stroke:rgba(148,163,184,0.45);
+
+    stroke-width:1.5;
+
+    transition:
+    fill .5s ease,
+    stroke .5s ease,
+    filter .5s ease;
+
+}
+
+
+
+
+/* =====================
+   CORE BLUE NODE
+===================== */
+
+
+.core-ring {
+
+    stroke:#3b82f6;
+
+    stroke-width:1;
+
+    opacity:.25;
+
+}
+
+
+
+.core-node {
+
+    fill:#3b82f6;
+
+    filter:url(#blueGlow);
+
+}
+
+
+
+/* =====================
+   HOVER INTERACTION
+===================== */
+
+
+.hero-graphic:hover .system-path {
+
+
+    stroke:#64748b;
+
+    stroke-dashoffset:0;
+
+    animation:
+    drawFlow 3s linear infinite;
+
+}
+
+
+
+.hero-graphic:hover .node {
+
+
+    stroke:#3b82f6;
+
+    filter:
+    drop-shadow(0 0 8px rgba(59,130,246,.45));
+
+}
+
+
+
+.hero-graphic:hover .core-node {
+
+
+    animation:
+    pulseCore 2s ease-in-out infinite;
+
+}
+
+
+
+/* =====================
+   ANIMATIONS
+===================== */
+
+
+@keyframes drawFlow {
+
+
+from {
+
+stroke-dashoffset:700;
+
+}
+
+
+to {
+
+stroke-dashoffset:0;
+
+}
+
+}
+
+
+
+@keyframes pulseCore {
+
+
+0% {
+
+r:10;
+
+opacity:.8;
+
+}
+
+
+50% {
+
+r:14;
+
+opacity:1;
+
+}
+
+
+100% {
+
+r:10;
+
+opacity:.8;
+
+}
+
+}
+
+
+
+/* =====================
+   ACCESSIBILITY
+===================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+.system-path,
+.core-node {
+
+animation:none!important;
+
+transition:none!important;
+
+}
+
+
+}

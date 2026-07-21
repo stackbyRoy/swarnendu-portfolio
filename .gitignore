@@ -1,0 +1,28 @@
+# Standard OS files
+.DS_Store
+Thumbs.db
+db.json
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Workspace artifacts
+.gemini/
+.agent/
+temp/
+tmp/
+
+# Project-internal docs (not for public repo)
+Instructions/
